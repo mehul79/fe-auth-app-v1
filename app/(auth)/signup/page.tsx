@@ -59,7 +59,7 @@ function AuthForm() {
   const handleEmailLogin = async (values: z.infer<typeof formSchema>) => {
     try {
       setLoading(true);
-      console.log("Backend URL:", process.env.NEXT_PUBLIC_BACKEND_URL);
+      // console.log("Backend URL:", process.env.NEXT_PUBLIC_BACKEND_URL);
       const response = await toast.promise(
         axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/signup`, values, {
           withCredentials: true,
