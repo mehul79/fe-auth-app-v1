@@ -8,7 +8,7 @@ export default function Page(){
     useEffect(()=>{
         const inner = async()=>{
             try{
-                const res = await axios.get("https://be-auth-app-v1.onrender.com/")
+                const res = await axios.get("https://be-auth-app-v1.vercel.app/")
                 setData(res.data)
                 console.log(res.data);
             }catch(e){
